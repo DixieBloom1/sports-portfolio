@@ -18,7 +18,7 @@ export class FooterComponent implements AfterViewInit{
           entry.target.classList.add('visible');
         }
       });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.3 });
 
     observer.observe(this.el.nativeElement.querySelector('.site-footer'));
   }

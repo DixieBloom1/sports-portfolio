@@ -1,25 +1,115 @@
 <div class="video-wrapper">
   <div class="video-half">
-    <video autoplay muted loop playsinline preload="auto" class="background-video">
+    <video autoplay muted loop playsinline class="background-video" #basketballVideo>
       <source src="assets/videos/basketball.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
     </video>
 
     <div class="video-overlay"></div>
 
-    <div class="overlay-content">Perin's Sport</div>
+    <div class="sport-content">
+        <a href="https://en.wikipedia.org/wiki/Rules_of_basketbal" target="_blank" rel="noopener" class="sport-title-link">
+          <h2 class="sport-title">Košarka</h2>
+        </a>
+
+      <div class="info-card">
+        <div class="info-section">
+          <h3><i class="fas fa-basketball-ball"></i> Osnovne informacije</h3>
+          <ul>
+            <li><strong>Dimenzije terena:</strong> 28m × 15m</li>
+            <li><strong>Visina obruča:</strong> 3.05 metara</li>
+            <li><strong>Opseg lopte:</strong> 75-78 cm</li>
+            <li><strong>Počeci:</strong> 1891. u Springfieldu</li>
+          </ul>
+        </div>
+
+        <div class="info-section">
+          <h3><i class="fas fa-whistle"></i> Ključna pravila</h3>
+          <ul>
+            <li><strong>Dribling:</strong> Mogućnost koraka bez driblinga</li>
+            <li><strong>Prekršaji:</strong> Lični, tehnički, flagranti</li>
+            <li><strong>Vremenska ograničenja:</strong> 8 sekundi za prijelaz u napad</li>
+            <li><strong>Zamjene:</strong> Neograničen broj</li>
+          </ul>
+        </div>
+
+        <div class="info-section">
+          <h3><i class="fas fa-trophy"></i> Natjecanja & Zanimljivosti</h3>
+          <ul>
+            <li><strong>NBA rekordi:</strong> Najviše bodova - Wilt Chamberlain (100)</li>
+            <li><strong>Hrvatska tradicija:</strong> Dražen Petrović, Krešimir Ćosić</li>
+            <li><strong>Olimpijske igre:</strong> Od 1936. godine</li>
+            <li><strong>Varijante:</strong> Streetball, 3x3 košarka</li>
+          </ul>
+        </div>
+
+        <div class="links">
+          <a href="https://www.fiba.basketball" target="_blank" class="info-link">
+            <i class="fas fa-external-link-alt"></i> FIBA službena stranica
+          </a>
+          <a href="https://www.nba.com" target="_blank" class="info-link">
+            <i class="fas fa-external-link-alt"></i> NBA službena stranica
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 
+  <!-- Football Section -->
   <div class="video-half">
-    <video autoplay muted loop playsinline preload="auto" class="background-video">
+    <video autoplay muted loop playsinline class="background-video" #footballVideo>
       <source src="assets/videos/football.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
     </video>
 
     <div class="video-overlay"></div>
 
-    <div class="overlay-content">Marijin's Sport</div>
+    <div class="sport-content">
+        <a href="https://en.wikipedia.org/wiki/Laws_of_the_Game_(association_football)" target="_blank" rel="noopener" class="sport-title-link">
+          <h2 class="sport-title">Nogomet</h2>
+        </a>
+
+      <div class="info-card">
+        <div class="info-section">
+          <h3><i class="fas fa-futbol"></i> Osnovne informacije</h3>
+          <ul>
+            <li><strong>Dimenzije terena:</strong> 100-110m × 64-75m</li>
+            <li><strong>Težina lopte:</strong> 410-450 grama</li>
+            <li><strong>Počeci:</strong> Moderna verzija 1863. u Engleskoj</li>
+            <li><strong>Gol:</strong> 7.32m × 2.44m</li>
+          </ul>
+        </div>
+
+        <div class="info-section">
+          <h3><i class="fas fa-whistle"></i> Ključna pravila</h3>
+          <ul>
+            <li><strong>Ofsajd:</strong> Igrač iza posljednjeg braniča u trenutku dodavanja</li>
+            <li><strong>Slobodni udarci:</strong> Direktni i indirektni</li>
+            <li><strong>Aut:</strong> Lopta izađe izvan bočne linije</li>
+            <li><strong>Produžeci:</strong> 2 × 15 minuta ako je rezultat neriješen</li>
+          </ul>
+        </div>
+
+        <div class="info-section">
+          <h3><i class="fas fa-trophy"></i> Natjecanja & Zanimljivosti</h3>
+          <ul>
+            <li><strong>Svjetski rekordi:</strong> Najviše golova - Cristiano Ronaldo</li>
+            <li><strong>Hrvatska tradicija:</strong> 2. mjesto SP 2018.</li>
+            <li><strong>Najgledaniji sport:</strong> Procjenjuje se 4 milijarde navijača</li>
+            <li><strong>Varijante:</strong> Futsal, beach soccer</li>
+          </ul>
+        </div>
+
+        <div class="links">
+          <a href="https://www.fifa.com" target="_blank" class="info-link">
+            <i class="fas fa-external-link-alt"></i> FIFA službena stranica
+          </a>
+          <a href="https://www.uefa.com" target="_blank" class="info-link">
+            <i class="fas fa-external-link-alt"></i> UEFA službena stranica
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
+<app-second-choice></app-second-choice>
 <app-student-gallery></app-student-gallery>

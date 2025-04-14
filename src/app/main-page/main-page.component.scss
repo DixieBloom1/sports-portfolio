@@ -13,6 +13,9 @@
   flex: 1;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Video stretches to fill its half */
@@ -37,14 +40,193 @@
   z-index: 2;
 }
 
-
-/* Optional text or content overlay */
-.overlay-content {
+/* Sport content container */
+.sport-content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
+  width: 80%;
+  max-width: 600px;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.sport-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 5px black;
+}
+
+.info-card {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-card h3 {
+  color: #04c3af;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.info-card ul {
+  text-align: left;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.info-card li {
+  margin-bottom: 0.5rem;
+}
+
+.info-links {
+  margin-top: 1.5rem;
+}
+
+.info-link {
+  display: inline-block;
+  color: white;
+  background: rgba(4, 195, 175, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px solid #04c3af;
+  transition: all 0.3s ease;
+  margin: 0.5rem;
+}
+
+.info-link:hover {
+  background: #04c3af;
+  color: #1e1e1e;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .video-wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .video-half {
+    height: 50vh;
+  }
+
+  .sport-title {
+    font-size: 2rem;
+  }
+
+  .info-card {
+    padding: 1rem;
+  }
+}
+
+/* Keep your existing overlay-content style */
+.overlay-content {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 3;
   color: white;
   font-size: 2rem;
   font-weight: bold;
-  padding: 2rem;
+  padding: 1rem;
   text-shadow: 1px 1px 5px black;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+
+/* Enhancements for additional content */
+.info-card {
+  max-height: 80vh;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.info-card::-webkit-scrollbar {
+  width: 5px;
+}
+
+.info-card::-webkit-scrollbar-thumb {
+  background: rgba(4, 195, 175, 0.5);
+  border-radius: 3px;
+}
+
+.info-section {
+  margin-bottom: 1.8rem;
+}
+
+.info-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  color: #04c3af;
+}
+
+.info-section ul {
+  padding-left: 1.2rem;
+}
+
+.info-section li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.info-link {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .info-card {
+    max-height: 65vh;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.sport-title-link {
+  color: white !important; /* Matches your existing title color */
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.sport-title-link:hover {
+  color: #04c3af !important; /* Your teal accent color on hover */
+  transform: translateY(-2px);
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* External link icon - subtle and matching */
+.sport-title-link::after {
+  content: '\f08e';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-left: 8px;
+  font-size: 0.7em;
+  color: rgba(255,255,255,0.7);
+  transition: all 0.2s ease;
+}
+
+.sport-title-link:hover::after {
+  color: #04c3af;
+  transform: translateX(3px);
+}
+a {
+  color: inherit; /* Inherits text color from parent */
+  text-decoration: none; /* Removes underline */
 }

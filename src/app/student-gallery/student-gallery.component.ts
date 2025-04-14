@@ -26,22 +26,22 @@ export class StudentGalleryComponent implements AfterViewInit{
   students: Student[] = [
     {
       name: 'Sergej Karas',
-      photo: 'assets/photos/profil.jpg',
+      photo: 'assets/photos/sergej.jpeg',
       dob: '14.08.2002.',
-      program: 'Computer Science',
-      university: 'FERIT, University of Osijek',
+      program: 'Računarstvo',
+      university: 'FERIT, Sveučilište u Osijeku',
       hobbies: 'Košarka, Programiranje',
       contact: 'skaras@etfos.hr',
       social: 'https://facebook.com/pero'
     },
     {
-      name: 'Marija',
-      photo: 'assets/photos/profil.jpg',
-      dob: '1996-08-22',
-      program: 'Electronics',
-      university: 'University of Osijek',
-      hobbies: 'Reading, Hiking',
-      contact: 'marija@example.com'
+      name: 'Luka Štifić',
+      photo: 'assets/photos/luka.jpeg',
+      dob: '01.03.2003',
+      program: 'Računarstvo',
+      university: 'FERIT, Sveučilište u Osijeku',
+      hobbies: 'Pub kvizovi',
+      contact: 'lstific@etfos.hr'
     }
   ];
 

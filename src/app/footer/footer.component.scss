@@ -46,7 +46,7 @@
 
 .site-footer {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(50px);
   transition: opacity 1.5s ease-out, transform 2s ease-out;
 
   &.visible {
