@@ -1,1 +1,25 @@
-<p>user-bio-modal works!</p>
+
+<div class="modal-body">
+  <div class="modal-photo-wrapper">
+    <a [href]="data.photo" target="_blank" rel="noopener">
+      <img [src]="data.photo" [alt]="data.name" class="modal-photo" />
+    </a>
+  </div>
+
+  <div class="modal-name">
+    <strong>{{data.name}}</strong>
+  </div>
+
+  <div class="modal-info">
+    <ul class="bio-list">
+      <li><strong>Date of birth:</strong> {{ data.dob }}</li>
+      <li><strong>Student of:</strong> {{ data.program }}</li>
+      <li><strong>University:</strong> {{ data.university }}</li>
+      <li><strong>Hobbies:</strong> {{ data.hobbies }}</li>
+      <li><strong>Contact:</strong> {{ data.contact }}</li>
+      <li *ngIf="data.social">
+        <strong>Social:</strong> <a [href]="data.social" target="_blank">Profile</a>
+      </li>
+    </ul>
+  </div>
+</div>

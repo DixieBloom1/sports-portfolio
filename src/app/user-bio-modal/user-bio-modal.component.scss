@@ -1,0 +1,77 @@
+.modal-content {
+  background: #1e1e1e;
+  color: #f4f4f4;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.modal-body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #442b42;
+}
+
+.modal-photo-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.modal-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #04c3af;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.modal-photo:hover {
+  transform: scale(1.05);
+}
+
+.modal-name{
+  font-size: 30px;
+  color: #04c3af;
+  margin-bottom: 20px;
+}
+
+.modal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  max-width: 800px;
+  font-size: 1.1rem;
+}
+
+.bio-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bio-list li {
+  background: rgba(183, 117, 184, 0.1);
+  border-left: 5px solid #b775b8;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  text-align: left;
+  color: white;
+  margin-top: 10px;
+}
+
+.bio-list strong {
+  color: #b775b8;
+}
+
+.bio-list a {
+  color: #04c3af;
+  text-decoration: none;
+}
+
+.bio-list a:hover {
+  text-decoration: underline;
+}
