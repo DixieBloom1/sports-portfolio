@@ -1,1 +1,23 @@
-<p>question-page works!</p>
+<div class="split-page-container">
+  <!-- Left Section -->
+  <div class="page-section left-section" [@slideFadeInRight]>
+    <div class="section-content">
+      <h2>Košarka</h2>
+      <p>Osnovne informacije o košarci...</p>
+      <button class="section-button" (click)="navigateTo('/basketball')">
+        Saznaj više
+      </button>
+    </div>
+  </div>
+
+  <!-- Right Section -->
+  <div class="page-section right-section" [@slideFadeInRight]>
+    <div class="section-content">
+      <h2>Nogomet</h2>
+      <p>Osnovne informacije o nogometu...</p>
+      <button class="section-button" (click)="navigateTo('/football')">
+        Saznaj više
+      </button>
+    </div>
+  </div>
+</div>
