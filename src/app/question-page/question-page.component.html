@@ -1,23 +1,29 @@
-<div class="split-page-container">
-  <!-- Left Section -->
-  <div class="page-section left-section" [@slideFadeInRight]>
-    <div class="section-content">
-      <h2>Košarka</h2>
-      <p>Osnovne informacije o košarci...</p>
-      <button class="section-button" (click)="navigateTo('/basketball')">
-        Saznaj više
-      </button>
-    </div>
+<div class="page-wrapper">
+  <div class="page-header">
+    <a class="back-button" routerLink="/">
+      &#8592; Povratak
+    </a>
   </div>
 
-  <!-- Right Section -->
-  <div class="page-section right-section" [@slideFadeInRight]>
-    <div class="section-content">
-      <h2>Nogomet</h2>
-      <p>Osnovne informacije o nogometu...</p>
-      <button class="section-button" (click)="navigateTo('/football')">
-        Saznaj više
-      </button>
+  <div class="split-page-container">
+    <div class="page-section left-section" [@slideInRight]>
+      <div class="section-overlay"></div>
+      <div class="section-content">
+        <h2>Sergej</h2>
+        <button class="section-button" (click)="openSportModal('Sergej')">
+          Saznaj više
+        </button>
+      </div>
+    </div>
+
+    <div class="page-section right-section" [@slideInLeft]>
+      <div class="section-overlay"></div>
+      <div class="section-content">
+        <h2>Luka</h2>
+        <button class="section-button" (click)="openSportModal('Luka')">
+          Saznaj više
+        </button>
+      </div>
     </div>
   </div>
 </div>

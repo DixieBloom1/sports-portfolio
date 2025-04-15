@@ -1,12 +1,14 @@
 import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
 import {StudentGalleryComponent} from '../student-gallery/student-gallery.component';
 import {SecondChoiceComponent} from '../second-choice/second-choice.component';
+import {HeaderComponent} from '../header/header.component';
 
 @Component({
   selector: 'app-main-page',
   imports: [
     StudentGalleryComponent,
-    SecondChoiceComponent
+    SecondChoiceComponent,
+    HeaderComponent
   ],
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss'

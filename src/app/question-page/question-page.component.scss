@@ -1,8 +1,8 @@
 .split-page-container {
   display: flex;
   height: 100vh;
-  width: 100%;
   overflow: hidden;
+  width: 100%;
 }
 
 .page-section {
@@ -28,12 +28,12 @@
   }
 
   &.left-section {
-    background-image: url('/assets/photos/sergej_q.jpeg');
+    background-image: url('/assets/photos/sergej_q.webp');
     animation-delay: 0.2s;
   }
 
   &.right-section {
-    background-image: url('/assets/photos/luka_skracen.jpeg');
+    background-image: url('/assets/photos/luka_q.webp');
     animation-delay: 0.4s;
   }
 
@@ -53,17 +53,15 @@
   text-align: center;
   padding: 2rem;
   max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
   h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 4rem;
+    margin-bottom: 15rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-
-  p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -100,3 +98,32 @@
     }
   }
 }
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.page-header {
+  flex-shrink: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #04c3af;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.back-button {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1rem;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+
+

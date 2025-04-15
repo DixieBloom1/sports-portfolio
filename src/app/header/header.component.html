@@ -1,19 +1,12 @@
 <mat-toolbar color="primary" class="custom-header">
   <div class="header-container">
-    <button mat-button class="header-link" (click)="handleButtonClick()">
-      <img [ngSrc]="'assets/icons/' + leftIcon"
-           alt="Sport icon"
-           class="header-icon"
-           height="24"
-           width="24"/>
+    <a routerLink="/question" class="header-link">
+      <img src="assets/icons/basketball.svg" alt="basketball icon" class="header-icon" />
 
-      <span class="link-text">{{ headerText }}</span>
+      <span class="link-text">Bavimo li se i mi ovim sportom...?</span>
 
-      <img [ngSrc]="'assets/icons/' + rightIcon"
-           alt="Sport icon"
-           class="header-icon"
-           height="24"
-           width="24"/>
-    </button>
+      <img src="assets/icons/football.svg" alt="arrow icon" class="header-icon" />
+    </a>
   </div>
 </mat-toolbar>
+
