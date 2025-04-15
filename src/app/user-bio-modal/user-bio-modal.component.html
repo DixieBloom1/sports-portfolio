@@ -12,13 +12,14 @@
 
   <div class="modal-info">
     <ul class="bio-list">
-      <li><strong>Date of birth:</strong> {{ data.dob }}</li>
-      <li><strong>Student of:</strong> {{ data.program }}</li>
-      <li><strong>University:</strong> {{ data.university }}</li>
-      <li><strong>Hobbies:</strong> {{ data.hobbies }}</li>
-      <li><strong>Contact:</strong> {{ data.contact }}</li>
-      <li *ngIf="data.social">
-        <strong>Social:</strong> <a [href]="data.social" target="_blank">Profile</a>
+      <li><strong>Datum Rođenja:</strong> {{ data.dob }}</li>
+      <li><strong>Studij:</strong> {{ data.program }}</li>
+      <li><strong>Fakultet:</strong> {{ data.university }}</li>
+      <li><strong>Hobi:</strong> {{ data.hobbies }}</li>
+      <li><strong>Kontak:</strong> {{ data.contact }}</li>
+      <li *ngIf="data.audio">
+        <strong>Poslušaj me:</strong>
+        <audio [src]="data.audio" controls></audio>
       </li>
     </ul>
   </div>

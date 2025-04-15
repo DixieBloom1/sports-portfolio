@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import {MatToolbar} from '@angular/material/toolbar';
-import {NgOptimizedImage} from '@angular/common';
 import {RouterLink} from '@angular/router';
 
 
@@ -9,7 +8,6 @@ import {RouterLink} from '@angular/router';
   templateUrl: './header.component.html',
   imports: [
     MatToolbar,
-    NgOptimizedImage,
     RouterLink
   ],
   styleUrls: ['./header.component.scss']

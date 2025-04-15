@@ -11,7 +11,7 @@ interface Student {
   university: string;
   hobbies: string;
   contact: string;
-  social?: string;
+  audio?: string;
 }
 
 @Component({
@@ -32,7 +32,7 @@ export class StudentGalleryComponent implements AfterViewInit{
       university: 'FERIT, Sveučilište u Osijeku',
       hobbies: 'Košarka, Programiranje',
       contact: 'skaras@etfos.hr',
-      social: 'https://facebook.com/pero'
+      audio: 'assets/sound/sergej-voice.mp3'
     },
     {
       name: 'Luka Štifić',
@@ -41,7 +41,8 @@ export class StudentGalleryComponent implements AfterViewInit{
       program: 'Računarstvo',
       university: 'FERIT, Sveučilište u Osijeku',
       hobbies: 'Pub kvizovi',
-      contact: 'lstific@etfos.hr'
+      contact: 'lstific@etfos.hr',
+      audio: 'assets/sound/luka-voice.ogg'
     }
   ];
 
