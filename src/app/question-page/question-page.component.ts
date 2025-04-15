@@ -62,7 +62,7 @@ export class QuestionPageComponent {
     this.dialog.open(QuestionAnswerModalComponent, {
       data: modalData,
       panelClass: 'custom-dialog-container',
-      maxWidth: '50vw',
+      maxWidth: '30vw',
       maxHeight: '90vh',
       width: 'auto'
     });
