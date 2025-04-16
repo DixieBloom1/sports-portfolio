@@ -3,12 +3,16 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
 
   .bio-photo {
-    width: 100%;
-    max-width: 20vw;
-    max-height: 60vh;
+    width: auto;
     height: auto;
+    /* Set maximum dimensions */
+    max-width: 200px;
+    max-height: 200px;
+    /* Maintain aspect ratio */
     object-fit: contain;
     border-radius: 12px;
     margin-bottom: 1.5rem;
@@ -16,17 +20,37 @@
   }
 
   .bio-text {
-    max-width: 800px;
+    width: 100%;
+    max-width: min(90vw, 800px);
     text-align: center;
+    padding: 0 1rem;
 
     h2 {
       margin-bottom: 1rem;
-      font-size: 2rem;
+      font-size: clamp(1.5rem, 5vw, 2.5rem);
     }
 
     p {
-      font-size: 1.1rem;
+      font-size: clamp(1rem, 3vw, 1.2rem);
       line-height: 1.6;
+    }
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .bio-modal-container {
+    padding: 1rem;
+
+    .bio-photo {
+      /* Slightly smaller on mobile if needed */
+      max-width: 180px;
+      max-height: 180px;
+      margin-bottom: 1rem;
+    }
+
+    .bio-text {
+      padding: 0 0.5rem;
     }
   }
 }

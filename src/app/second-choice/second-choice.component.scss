@@ -122,6 +122,9 @@
 
 .sport-info {
   padding: 2rem;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  height: 100%;
 }
 
 .info-section {
@@ -177,6 +180,24 @@
   }
 }
 
+@supports (-webkit-touch-callout: none) {
+  .sport-card {
+    height: 100vh; /* Use viewport height */
+  }
+
+  .card-front {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .sport-info {
+    flex: 1;
+    overflow-y: scroll; /* Use scroll instead of auto for iOS */
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
 /* Responsive design */
 @media (max-width: 992px) {
 
@@ -225,8 +246,11 @@
   .sport-card {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
+    height: 80vh;
+    max-height: 800px;
+  }
+  .sport-card {
+
   }
 
   .card-inner {
@@ -248,11 +272,12 @@
 
   .sport-info {
     flex: 1;
-    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
     padding: 1.5rem;
   }
 
-  .second-choice-container {
+    .second-choice-container {
     padding: 4rem 1.5rem;
   }
 
