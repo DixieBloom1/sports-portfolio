@@ -1,29 +1,30 @@
 <div class="page-wrapper">
-  <div class="page-header">
-    <a class="back-button" routerLink="/">
-      &#8592; Povratak
-    </a>
-  </div>
-
-  <div class="split-page-container">
-    <div class="page-section left-section" [@slideInRight]>
-      <div class="section-overlay"></div>
-      <div class="section-content">
-        <h2>Sergej</h2>
-        <button class="section-button" (click)="openSportModal('Sergej')">
-          Saznaj više
-        </button>
-      </div>
+    <div class="page-header">
+        <a class="back-button" routerLink="/">
+            &#8592; Povratak
+        </a>
     </div>
 
-    <div class="page-section right-section" [@slideInLeft]>
-      <div class="section-overlay"></div>
-      <div class="section-content">
-        <h2>Luka</h2>
-        <button class="section-button" (click)="openSportModal('Luka')">
-          Saznaj više
-        </button>
-      </div>
+    <div class="split-page-container">
+        <div [@slideInRight] class="page-section left-section">
+            <div class="section-overlay"></div>
+            <div class="section-content">
+                <h2>Sergej</h2>
+                <button (click)="openSportModal('Sergej')" class="section-button">
+                    Saznaj više
+                </button>
+            </div>
+        </div>
+
+        <div [@slideInLeft] class="page-section right-section">
+            <div class="section-overlay"></div>
+            <div class="section-content">
+                <h2>Luka</h2>
+                <button (click)="openSportModal('Luka')" class="section-button">
+                    Saznaj više
+                </button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
+

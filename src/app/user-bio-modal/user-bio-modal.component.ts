@@ -11,6 +11,7 @@ import {MAT_DIALOG_DATA} from '@angular/material/dialog';
   styleUrls: ['./user-bio-modal.component.scss']
 })
 export class UserBioModalComponent {
-  constructor(@Inject(MAT_DIALOG_DATA) public data: any) {}
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any) {
+  }
 
 }

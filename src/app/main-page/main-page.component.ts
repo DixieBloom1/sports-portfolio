@@ -13,7 +13,7 @@ import {HeaderComponent} from '../header/header.component';
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss'
 })
-export class MainPageComponent implements AfterViewInit{
+export class MainPageComponent implements AfterViewInit {
   @ViewChild('basketballVideo') basketballVideo!: ElementRef<HTMLVideoElement>;
   @ViewChild('footballVideo') footballVideo!: ElementRef<HTMLVideoElement>;
 

@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { UserBioModalComponent } from './user-bio-modal.component';
+import {UserBioModalComponent} from './user-bio-modal.component';
 
 describe('UserBioModalComponent', () => {
   let component: UserBioModalComponent;
@@ -10,7 +10,7 @@ describe('UserBioModalComponent', () => {
     await TestBed.configureTestingModule({
       imports: [UserBioModalComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(UserBioModalComponent);
     component = fixture.componentInstance;

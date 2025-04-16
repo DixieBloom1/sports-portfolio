@@ -1,14 +1,14 @@
 <div class="secondary-content">
-  <div class="content-wrapper">
-    <h2 class="section-title">Upoznajte nas</h2>
-    <div class="student-images">
-      <img
-        *ngFor="let student of students"
-        [src]="student.photo"
-        [alt]="student.name"
-        class="student-photo"
-        (click)="openStudentModal(student)"
-      />
+    <div class="content-wrapper">
+        <h2 class="section-title">Upoznajte nas</h2>
+        <div class="student-images">
+            <img
+                    *ngFor="let student of students"
+                    [src]="student.photo"
+                    [alt]="student.name"
+                    class="student-photo"
+                    (click)="openStudentModal(student)"
+            />
+        </div>
     </div>
-  </div>
 </div>

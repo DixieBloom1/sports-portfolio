@@ -1,115 +1,115 @@
 <div class="second-choice-container">
-  <h2 class="section-title">Naši drugi izbori</h2>
+    <h2 class="section-title">Naši drugi izbori</h2>
 
-  <div class="sports-cards">
-    <div class="sport-card" #volleyballCard>
-      <div class="card-inner">
-        <div class="card-front">
-          <div class="sport-header">
-            <h3>Odbojka</h3>
-            <div class="sport-icon">
-              <i class="fas fa-volleyball-ball"></i>
+    <div class="sports-cards">
+        <div class="sport-card" #volleyballCard>
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="sport-header">
+                        <h3>Odbojka</h3>
+                        <div class="sport-icon">
+                            <i class="fas fa-volleyball-ball"></i>
+                        </div>
+                    </div>
+
+                    <div class="sport-info">
+                        <div class="info-section">
+                            <h4><i class="fas fa-info-circle"></i> Osnovne informacije</h4>
+                            <ul>
+                                <li><strong>Broj igrača:</strong> 6 po timu</li>
+                                <li><strong>Teren:</strong> 18×9 metara</li>
+                                <li><strong>Setovi:</strong> Do 3 dobivena seta</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-section">
+                            <h4><i class="fas fa-trophy"></i> Poznatija natjecanja</h4>
+                            <ul>
+                                <li>Olimpijske igre</li>
+                                <li>Svjetsko prvenstvo</li>
+                                <li>CEV Liga prvaka</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-section">
+                            <h4><i class="fas fa-star"></i> Zanimljivosti</h4>
+                            <ul>
+                                <li>Inventirana 1895. u SAD-u</li>
+                                <li>Najviši prosječni igrači od svih sportova</li>
+                                <li>Beach odbojka popularna ljetna varijanta</li>
+                            </ul>
+                        </div>
+
+                        <button class="info-button" (click)="flipCard(volleyballCard, 'flzPMXjBcFM')">
+                            <i class="fas fa-play"></i> Pogledajte najbolje trenutke
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-back">
+                    <div class="video-container">
+                        <iframe #volleyballVideo width="560" height="315" frameborder="0" allowfullscreen></iframe>
+                        <button class="close-video" (click)="flipCard(volleyballCard)">
+                            <i class="fas fa-times"></i> Zatvori video
+                        </button>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div class="sport-info">
-            <div class="info-section">
-              <h4><i class="fas fa-info-circle"></i> Osnovne informacije</h4>
-              <ul>
-                <li><strong>Broj igrača:</strong> 6 po timu</li>
-                <li><strong>Teren:</strong> 18×9 metara</li>
-                <li><strong>Setovi:</strong> Do 3 dobivena seta</li>
-              </ul>
-            </div>
-
-            <div class="info-section">
-              <h4><i class="fas fa-trophy"></i> Poznatija natjecanja</h4>
-              <ul>
-                <li>Olimpijske igre</li>
-                <li>Svjetsko prvenstvo</li>
-                <li>CEV Liga prvaka</li>
-              </ul>
-            </div>
-
-            <div class="info-section">
-              <h4><i class="fas fa-star"></i> Zanimljivosti</h4>
-              <ul>
-                <li>Inventirana 1895. u SAD-u</li>
-                <li>Najviši prosječni igrači od svih sportova</li>
-                <li>Beach odbojka popularna ljetna varijanta</li>
-              </ul>
-            </div>
-
-            <button class="info-button" (click)="flipCard(volleyballCard, 'flzPMXjBcFM')">
-              <i class="fas fa-play"></i> Pogledajte najbolje trenutke
-            </button>
-          </div>
         </div>
 
-        <div class="card-back">
-          <div class="video-container">
-            <iframe #volleyballVideo width="560" height="315" frameborder="0" allowfullscreen></iframe>
-            <button class="close-video" (click)="flipCard(volleyballCard)">
-              <i class="fas fa-times"></i> Zatvori video
-            </button>
-          </div>
+        <div class="sport-card" #dartsCard>
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="sport-header">
+                        <h3>Pikado</h3>
+                        <div class="sport-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                    </div>
+
+                    <div class="sport-info">
+                        <div class="info-section">
+                            <h4><i class="fas fa-info-circle"></i> Osnovne informacije</h4>
+                            <ul>
+                                <li><strong>Broj igrača:</strong> 1-2 (pojedinačno) ili timovi</li>
+                                <li><strong>Oprema:</strong> Pikado ploča i strelice</li>
+                                <li><strong>Trajanje:</strong> Do postignutog cilja (npr. 501 bod)</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-section">
+                            <h4><i class="fas fa-trophy"></i> Popularne varijante</h4>
+                            <ul>
+                                <li>501 (najpopularnija)</li>
+                                <li>Kricket</li>
+                                <li>Around the Clock</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-section">
+                            <h4><i class="fas fa-star"></i> Zanimljivosti</h4>
+                            <ul>
+                                <li>Porijeklo iz Engleske</li>
+                                <li>Profesionalni igrači imaju nadimke</li>
+                                <li>Svaka sekcija na ploči ima točnu vrijednost</li>
+                            </ul>
+                        </div>
+
+                        <button class="info-button" (click)="flipCard(dartsCard, 'aYFU5acj2l4')">
+                            <i class="fas fa-play"></i> Pogledajte najbolje trenutke
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-back">
+                    <div class="video-container">
+                        <iframe #dartsVideo width="560" height="315" frameborder="0" allowfullscreen></iframe>
+                        <button class="close-video" (click)="flipCard(dartsCard)">
+                            <i class="fas fa-times"></i> Zatvori video
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-
-    <div class="sport-card" #dartsCard>
-      <div class="card-inner">
-        <div class="card-front">
-          <div class="sport-header">
-            <h3>Pikado</h3>
-            <div class="sport-icon">
-              <i class="fas fa-bullseye"></i>
-            </div>
-          </div>
-
-          <div class="sport-info">
-            <div class="info-section">
-              <h4><i class="fas fa-info-circle"></i> Osnovne informacije</h4>
-              <ul>
-                <li><strong>Broj igrača:</strong> 1-2 (pojedinačno) ili timovi</li>
-                <li><strong>Oprema:</strong> Pikado ploča i strelice</li>
-                <li><strong>Trajanje:</strong> Do postignutog cilja (npr. 501 bod)</li>
-              </ul>
-            </div>
-
-            <div class="info-section">
-              <h4><i class="fas fa-trophy"></i> Popularne varijante</h4>
-              <ul>
-                <li>501 (najpopularnija)</li>
-                <li>Kricket</li>
-                <li>Around the Clock</li>
-              </ul>
-            </div>
-
-            <div class="info-section">
-              <h4><i class="fas fa-star"></i> Zanimljivosti</h4>
-              <ul>
-                <li>Porijeklo iz Engleske</li>
-                <li>Profesionalni igrači imaju nadimke</li>
-                <li>Svaka sekcija na ploči ima točnu vrijednost</li>
-              </ul>
-            </div>
-
-            <button class="info-button" (click)="flipCard(dartsCard, 'aYFU5acj2l4')">
-              <i class="fas fa-play"></i> Pogledajte najbolje trenutke
-            </button>
-          </div>
-        </div>
-
-        <div class="card-back">
-          <div class="video-container">
-            <iframe #dartsVideo width="560" height="315" frameborder="0" allowfullscreen></iframe>
-            <button class="close-video" (click)="flipCard(dartsCard)">
-              <i class="fas fa-times"></i> Zatvori video
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
