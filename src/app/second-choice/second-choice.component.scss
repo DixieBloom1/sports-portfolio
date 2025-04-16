@@ -178,6 +178,38 @@
 
 /* Responsive design */
 @media (max-width: 992px) {
+
+  .sport-card {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .card-inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-front {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .sport-header {
+    flex-shrink: 0;
+  }
+
+  .sport-info {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1.5rem;
+  }
+
+
   .sports-cards {
     gap: 2rem;
   }
@@ -188,6 +220,37 @@
 }
 
 @media (max-width: 768px) {
+
+  .sport-card {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .card-inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-front {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .sport-header {
+    flex-shrink: 0;
+  }
+
+  .sport-info {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1.5rem;
+  }
+
   .second-choice-container {
     padding: 4rem 1.5rem;
   }
