@@ -2,6 +2,8 @@
     <h2 class="section-title">Naši drugi izbori</h2>
 
     <div class="sports-cards">
+
+        <!-- Odbojka -->
         <div class="sport-card" #volleyballCard>
             <div class="card-inner">
                 <div class="card-front">
@@ -13,36 +15,44 @@
                     </div>
 
                     <div class="sport-info">
-                        <div class="info-section">
-                            <h4><i class="fas fa-info-circle"></i> Osnovne informacije</h4>
-                            <ul>
-                                <li><strong>Broj igrača:</strong> 6 po timu</li>
-                                <li><strong>Teren:</strong> 18×9 metara</li>
-                                <li><strong>Setovi:</strong> Do 3 dobivena seta</li>
-                            </ul>
+                        <div class="sport-image">
+                            <a href="assets/photos/odbojka.jpg" target="_blank" rel="noopener">
+                                <img ngSrc="assets/photos/odbojka.jpg" alt="Odbojka slika" height="2167" width="3690">
+                            </a>
                         </div>
 
-                        <div class="info-section">
-                            <h4><i class="fas fa-trophy"></i> Poznatija natjecanja</h4>
-                            <ul>
-                                <li>Olimpijske igre</li>
-                                <li>Svjetsko prvenstvo</li>
-                                <li>CEV Liga prvaka</li>
-                            </ul>
-                        </div>
+                        <div class="sport-content">
+                            <div class="info-section">
+                                <h4><i class="fas fa-info-circle"></i> Osnovne informacije</h4>
+                                <ul>
+                                    <li><strong>Broj igrača:</strong> 6 po timu</li>
+                                    <li><strong>Teren:</strong> 18×9 metara</li>
+                                    <li><strong>Setovi:</strong> Do 3 dobivena seta</li>
+                                </ul>
+                            </div>
 
-                        <div class="info-section">
-                            <h4><i class="fas fa-star"></i> Zanimljivosti</h4>
-                            <ul>
-                                <li>Inventirana 1895. u SAD-u</li>
-                                <li>Najviši prosječni igrači od svih sportova</li>
-                                <li>Beach odbojka popularna ljetna varijanta</li>
-                            </ul>
-                        </div>
+                            <div class="info-section">
+                                <h4><i class="fas fa-trophy"></i> Poznatija natjecanja</h4>
+                                <ul>
+                                    <li>Olimpijske igre</li>
+                                    <li>Svjetsko prvenstvo</li>
+                                    <li>CEV Liga prvaka</li>
+                                </ul>
+                            </div>
 
-                        <button class="info-button" (click)="flipCard(volleyballCard, 'flzPMXjBcFM')">
-                            <i class="fas fa-play"></i> Pogledajte najbolje trenutke
-                        </button>
+                            <div class="info-section">
+                                <h4><i class="fas fa-star"></i> Zanimljivosti</h4>
+                                <ul>
+                                    <li>Osmišljen 1895. u SAD-u</li>
+                                    <li>Najviši prosječni igrači od svih sportova</li>
+                                    <li>Beach odbojka popularna ljetna varijanta</li>
+                                </ul>
+                            </div>
+
+                            <button class="info-button" (click)="flipCard(volleyballCard, 'flzPMXjBcFM')">
+                                <i class="fas fa-play"></i> Pogledajte najbolje trenutke
+                            </button>
+                        </div>
                     </div>
                 </div>
 
@@ -57,6 +67,7 @@
             </div>
         </div>
 
+        <!-- Pikado -->
         <div class="sport-card" #dartsCard>
             <div class="card-inner">
                 <div class="card-front">
@@ -68,36 +79,44 @@
                     </div>
 
                     <div class="sport-info">
-                        <div class="info-section">
-                            <h4><i class="fas fa-info-circle"></i> Osnovne informacije</h4>
-                            <ul>
-                                <li><strong>Broj igrača:</strong> 1-2 (pojedinačno) ili timovi</li>
-                                <li><strong>Oprema:</strong> Pikado ploča i strelice</li>
-                                <li><strong>Trajanje:</strong> Do postignutog cilja (npr. 501 bod)</li>
-                            </ul>
+                        <div class="sport-image">
+                            <a href="assets/photos/pikado.avif" target="_blank" rel="noopener">
+                                <img ngSrc="assets/photos/pikado.avif" alt="Pikado slika" height="549" width="976">
+                            </a>
                         </div>
 
-                        <div class="info-section">
-                            <h4><i class="fas fa-trophy"></i> Popularne varijante</h4>
-                            <ul>
-                                <li>501 (najpopularnija)</li>
-                                <li>Kricket</li>
-                                <li>Around the Clock</li>
-                            </ul>
-                        </div>
+                        <div class="sport-content">
+                            <div class="info-section">
+                                <h4><i class="fas fa-info-circle"></i> Osnovne informacije</h4>
+                                <ul>
+                                    <li><strong>Broj igrača:</strong> 1 na 1 ili timski</li>
+                                    <li><strong>Teren:</strong> Daska + linija gađanja</li>
+                                    <li><strong>Format:</strong> Najčešće 501</li>
+                                </ul>
+                            </div>
 
-                        <div class="info-section">
-                            <h4><i class="fas fa-star"></i> Zanimljivosti</h4>
-                            <ul>
-                                <li>Porijeklo iz Engleske</li>
-                                <li>Profesionalni igrači imaju nadimke</li>
-                                <li>Svaka sekcija na ploči ima točnu vrijednost</li>
-                            </ul>
-                        </div>
+                            <div class="info-section">
+                                <h4><i class="fas fa-trophy"></i> Poznatija natjecanja</h4>
+                                <ul>
+                                    <li>PDC Svjetsko prvenstvo</li>
+                                    <li>Premier League Darts</li>
+                                    <li>World Matchplay</li>
+                                </ul>
+                            </div>
 
-                        <button class="info-button" (click)="flipCard(dartsCard, 'aYFU5acj2l4')">
-                            <i class="fas fa-play"></i> Pogledajte najbolje trenutke
-                        </button>
+                            <div class="info-section">
+                                <h4><i class="fas fa-star"></i> Zanimljivosti</h4>
+                                <ul>
+                                    <li>Potječe iz Engleske</li>
+                                    <li>Brojevi na ploči nisu slučajni</li>
+                                    <li>Phil Taylor smatra se GOAT-om</li>
+                                </ul>
+                            </div>
+
+                            <button class="info-button" (click)="flipCard(dartsCard, 'GzXkFDuMUHk')">
+                                <i class="fas fa-play"></i> Pogledajte najbolje trenutke
+                            </button>
+                        </div>
                     </div>
                 </div>
 
@@ -111,5 +130,6 @@
                 </div>
             </div>
         </div>
+
     </div>
 </div>

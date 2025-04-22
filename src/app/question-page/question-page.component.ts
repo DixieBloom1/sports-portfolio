@@ -49,7 +49,7 @@ export class QuestionPageComponent {
             'Luka': {
                 name: 'Luka Štifić',
                 photo: 'assets/gif/fan.gif',
-                bio: `Luka je s nogometom "kliknuo" još kao klinac, i od tada su on i NK Slavonac iz Komletinaca nerazdvojni.
+                bio: `Luka je s nogometom "kliknuo" još kao klinac i od tada su on i NK Slavonac iz Komletinaca nerazdvojni.
             Dugi niz godina bio je dio momčadi, sve do kraja srednje škole kada odlučuje okačiti kopačke o klin.
             Ipak, njegova ljubav prema nogometu ostaje snažna – danas je redovan navijač hrvatske reprezentacije i rijetko propušta utakmicu svojih Vatrenih.`
             }

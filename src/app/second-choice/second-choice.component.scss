@@ -123,8 +123,13 @@
 .sport-info {
   padding: 2rem;
   -webkit-overflow-scrolling: touch;
-  overflow-y: auto;
   height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+
 }
 
 .info-section {
@@ -277,7 +282,7 @@
     padding: 1.5rem;
   }
 
-    .second-choice-container {
+  .second-choice-container {
     padding: 4rem 1.5rem;
   }
 
@@ -313,6 +318,44 @@
     transform: translateY(0);
   }
 }
+
+.sport-image {
+  width: 100%;
+  margin-bottom: 1.5rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 250px;
+  }
+}
+
+.card-front {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sport-image {
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0 0 8px 8px;
+  }
+}
+
+.sport-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+  -webkit-overflow-scrolling: touch;
+}
+
 
 /* Font Awesome */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');

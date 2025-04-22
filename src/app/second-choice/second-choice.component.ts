@@ -1,8 +1,11 @@
 import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
+import {NgOptimizedImage} from '@angular/common';
 
 @Component({
     selector: 'app-second-choice',
-    imports: [],
+    imports: [
+        NgOptimizedImage
+    ],
     templateUrl: './second-choice.component.html',
     styleUrl: './second-choice.component.scss'
 })

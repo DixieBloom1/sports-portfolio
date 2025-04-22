@@ -1,5 +1,7 @@
 <div class="bio-modal-container">
+    <a [href]="data.photo" target="_blank" rel="noopener">
     <img [src]="data.photo" [alt]="data.name" class="bio-photo"/>
+    </a>
     <div class="bio-text">
         <h2>{{ data.name }}</h2>
         <p>{{ data.bio }}</p>

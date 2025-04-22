@@ -26,7 +26,7 @@ export class StudentGalleryComponent implements AfterViewInit {
     students: Student[] = [
         {
             name: 'Sergej Karas',
-            photo: 'assets/photos/sergej.jpeg',
+            photo: 'assets/photos/sergej.png',
             dob: '14.08.2002.',
             program: 'Računarstvo',
             university: 'FERIT, Sveučilište u Osijeku',
@@ -37,7 +37,7 @@ export class StudentGalleryComponent implements AfterViewInit {
         {
             name: 'Luka Štifić',
             photo: 'assets/photos/luka.jpeg',
-            dob: '01.03.2003',
+            dob: '01.03.2003.',
             program: 'Računarstvo',
             university: 'FERIT, Sveučilište u Osijeku',
             hobbies: 'Pub kvizovi',
